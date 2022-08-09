@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amazon Ember Medium.ttf">
+            <string>AmazonEmber-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BoxOfficeTableCell" rowHeight="133" id="KGk-i7-Jjw" customClass="BoxOfficeTableCell" customModule="Pop_flake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="133"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E23-ki-tzk">
+                        <rect key="frame" x="45" y="5" width="88" height="121"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="7yc-8M-eXx"/>
+                            <constraint firstAttribute="width" secondItem="E23-ki-tzk" secondAttribute="height" multiplier="8:11" id="vXQ-Lh-apd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b90-Uw-sUi">
+                        <rect key="frame" x="20" y="55" width="10" height="21"/>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$00M this week, $00M in total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-oS-qFd">
+                        <rect key="frame" x="143" y="89.5" width="195" height="17"/>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In theaters for the past # weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek0-xZ-Y0N">
+                        <rect key="frame" x="143" y="111.5" width="174" height="14.5"/>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nac-XL-HbD">
+                        <rect key="frame" x="143" y="5" width="87" height="21"/>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ek0-xZ-Y0N" firstAttribute="bottom" secondItem="E23-ki-tzk" secondAttribute="bottom" id="0i8-oc-MCB"/>
+                    <constraint firstItem="b90-Uw-sUi" firstAttribute="centerY" secondItem="E23-ki-tzk" secondAttribute="centerY" id="6XL-ef-mGn"/>
+                    <constraint firstItem="E23-ki-tzk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="DwR-QG-dDr"/>
+                    <constraint firstItem="E23-ki-tzk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="MZd-c5-9gQ"/>
+                    <constraint firstItem="ek0-xZ-Y0N" firstAttribute="leading" secondItem="Nac-XL-HbD" secondAttribute="leading" id="YXG-J7-7Ej"/>
+                    <constraint firstItem="ek0-xZ-Y0N" firstAttribute="top" secondItem="KbU-oS-qFd" secondAttribute="bottom" constant="5" id="aRd-Fg-ohT"/>
+                    <constraint firstItem="KbU-oS-qFd" firstAttribute="leading" secondItem="Nac-XL-HbD" secondAttribute="leading" id="brh-Ng-rUY"/>
+                    <constraint firstItem="E23-ki-tzk" firstAttribute="leading" secondItem="b90-Uw-sUi" secondAttribute="trailing" constant="15" id="esn-2d-WMp"/>
+                    <constraint firstItem="Nac-XL-HbD" firstAttribute="leading" secondItem="E23-ki-tzk" secondAttribute="trailing" constant="10" id="lmY-8Q-Wid"/>
+                    <constraint firstItem="E23-ki-tzk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sz7-NJ-uKI"/>
+                    <constraint firstItem="Nac-XL-HbD" firstAttribute="top" secondItem="E23-ki-tzk" secondAttribute="top" id="tOE-KY-hiz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="movieImage" destination="E23-ki-tzk" id="cYL-zu-2Zj"/>
+                <outlet property="movieTitle" destination="Nac-XL-HbD" id="CoL-cO-s4c"/>
+                <outlet property="rankLabel" destination="b90-Uw-sUi" id="lkm-Pn-QtN"/>
+                <outlet property="revenueLabel" destination="KbU-oS-qFd" id="NcJ-ca-qWK"/>
+                <outlet property="timeInTheaters" destination="ek0-xZ-Y0N" id="sZ7-vT-WUF"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="94.084821428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amazon Ember Medium.ttf">
+            <string>AmazonEmber-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieTrailerCell" id="gTV-IL-0wX" customClass="MovieTrailerCell" customModule="Pop_flake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="360"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="360"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI9-Jk-tUI">
+                        <rect key="frame" x="0.0" y="0.0" width="445" height="288.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Oaf-D7-uPo">
+                                <rect key="frame" x="0.0" y="0.0" width="445" height="250.5"/>
+                                <color key="backgroundColor" red="0.60784313729999995" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Oaf-D7-uPo" secondAttribute="height" multiplier="16:9" id="7d7-3a-WOH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FVx-1S-gdb">
+                                <rect key="frame" x="30" y="130.5" width="89" height="158"/>
+                                <color key="backgroundColor" red="0.10755337030000001" green="0.26212674380000001" blue="0.28041166070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FVx-1S-gdb" secondAttribute="height" multiplier="115:204" id="oyb-07-Gy4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="q7f-hz-x8B">
+                                <rect key="frame" x="197.5" y="100.5" width="50" height="49"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="oVf-0d-qf9"/>
+                                    <constraint firstAttribute="height" constant="50" id="xyW-JZ-f3w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3U2-gB-Wxf">
+                                <rect key="frame" x="129" y="260.5" width="86.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q7f-hz-x8B" firstAttribute="centerY" secondItem="Oaf-D7-uPo" secondAttribute="centerY" id="RbA-u0-eZc"/>
+                            <constraint firstItem="3U2-gB-Wxf" firstAttribute="top" secondItem="Oaf-D7-uPo" secondAttribute="bottom" constant="10" id="VwV-1h-fMr"/>
+                            <constraint firstAttribute="bottom" secondItem="FVx-1S-gdb" secondAttribute="bottom" id="XPv-9a-rAA"/>
+                            <constraint firstItem="Oaf-D7-uPo" firstAttribute="top" secondItem="KI9-Jk-tUI" secondAttribute="top" id="Z9L-Es-2Hf"/>
+                            <constraint firstItem="q7f-hz-x8B" firstAttribute="centerX" secondItem="Oaf-D7-uPo" secondAttribute="centerX" id="cWz-Nd-Mgk"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3U2-gB-Wxf" secondAttribute="bottom" id="et4-7H-jlT"/>
+                            <constraint firstItem="FVx-1S-gdb" firstAttribute="top" secondItem="Oaf-D7-uPo" secondAttribute="bottom" constant="-120" id="i8d-SL-HSH"/>
+                            <constraint firstItem="FVx-1S-gdb" firstAttribute="leading" secondItem="KI9-Jk-tUI" secondAttribute="leading" constant="30" id="kS6-uV-pck"/>
+                            <constraint firstAttribute="trailing" secondItem="Oaf-D7-uPo" secondAttribute="trailing" id="ng8-Q0-PLQ"/>
+                            <constraint firstAttribute="width" secondItem="KI9-Jk-tUI" secondAttribute="height" multiplier="230:149" id="r7k-kJ-8bl"/>
+                            <constraint firstItem="Oaf-D7-uPo" firstAttribute="leading" secondItem="KI9-Jk-tUI" secondAttribute="leading" id="uKN-AA-uVk"/>
+                            <constraint firstItem="3U2-gB-Wxf" firstAttribute="leading" secondItem="FVx-1S-gdb" secondAttribute="trailing" constant="10" id="vii-97-Qho"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="KI9-Jk-tUI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7VL-uB-yPk"/>
+                <constraint firstAttribute="trailing" secondItem="KI9-Jk-tUI" secondAttribute="trailing" id="QFp-O6-Kc3"/>
+                <constraint firstItem="KI9-Jk-tUI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TZr-aq-gFI"/>
+            </constraints>
+            <size key="customSize" width="447" height="360"/>
+            <connections>
+                <outlet property="moviePoster" destination="FVx-1S-gdb" id="bbY-OH-k8h"/>
+                <outlet property="movieTitle" destination="3U2-gB-Wxf" id="lm5-4F-57F"/>
+                <outlet property="trailerPreview" destination="Oaf-D7-uPo" id="zxT-GZ-aMs"/>
+            </connections>
+            <point key="canvasLocation" x="412.31884057971018" y="166.74107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

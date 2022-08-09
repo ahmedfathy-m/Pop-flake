@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Amazon Ember Medium.ttf">
+            <string>AmazonEmber-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableCell" rowHeight="123" id="KGk-i7-Jjw" customClass="SearchTableCell" customModule="Pop_flake" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="415" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="415" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GoP-38-1wX">
+                        <rect key="frame" x="92" y="10" width="93" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="A1f-M7-a61"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nopicture" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-EL-EEz">
+                        <rect key="frame" x="5" y="5" width="82" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="113" id="UkS-vG-HQC"/>
+                            <constraint firstAttribute="width" secondItem="mEU-EL-EEz" secondAttribute="height" multiplier="8:11" id="aGd-Yz-5yP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0E-y2-jZ1">
+                        <rect key="frame" x="92" y="36" width="78.5" height="18"/>
+                        <fontDescription key="fontDescription" name="AmazonEmber-Medium" family="Amazon Ember" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mEU-EL-EEz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Oal-qF-BHM"/>
+                    <constraint firstItem="GoP-38-1wX" firstAttribute="leading" secondItem="mEU-EL-EEz" secondAttribute="trailing" constant="5" id="PmC-VV-Mvk"/>
+                    <constraint firstItem="GoP-38-1wX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Wk8-9o-Af7"/>
+                    <constraint firstItem="l0E-y2-jZ1" firstAttribute="leading" secondItem="GoP-38-1wX" secondAttribute="leading" id="lgw-N6-dKg"/>
+                    <constraint firstItem="mEU-EL-EEz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="qqK-A9-wY7"/>
+                    <constraint firstItem="mEU-EL-EEz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="u2v-kz-jKo"/>
+                    <constraint firstItem="l0E-y2-jZ1" firstAttribute="top" secondItem="GoP-38-1wX" secondAttribute="bottom" constant="5" id="yK6-6x-siT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="searchInfo" destination="l0E-y2-jZ1" id="H3L-3J-ON8"/>
+                <outlet property="searchItemImage" destination="mEU-EL-EEz" id="FC4-aR-qD7"/>
+                <outlet property="searchTitle" destination="GoP-38-1wX" id="HMy-Aa-Rd4"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="94.084821428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="nopicture" width="42.666667938232422" height="58.666667938232422"/>
+    </resources>
+</document>
