@@ -1,0 +1,10 @@
+disabled_rules:
+    - force_cast
+
+excluded:
+    - Pop-flake/AppDelegate.swift
+    - Pods
+
+line_length:
+    warning: 150
+    error: 300
